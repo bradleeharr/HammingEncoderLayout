@@ -47,38 +47,38 @@ For an example of the error-correcting properties of the encoder and decoder, th
 
 ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/f88052c2-cc99-4823-bc54-9a53acb0ae52)
 
-# Cell Level Description
+# Cell Level Descriptions
 * 4.1 Inverter
 
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/e0753227-900f-4219-85fe-20d3631d9c51)
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/e0753227-900f-4219-85fe-20d3631d9c51)
 
 * 4.2 NAND2
   
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/c66bb4bf-6c35-481c-8858-a44887a4f45e)
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/c66bb4bf-6c35-481c-8858-a44887a4f45e)
 
 * 4.3 NAND3
   
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/50684569-2212-495f-9ccd-077daddc417d)
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/50684569-2212-495f-9ccd-077daddc417d)
 
 * 4.4 AND3
 
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/f951187d-9dac-4361-b835-0a86c1f3c381)
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/f951187d-9dac-4361-b835-0a86c1f3c381)
 
 * 4.5 XOR2
   
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/408ff7f3-34c0-4419-b231-2865e7237eb9)
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/408ff7f3-34c0-4419-b231-2865e7237eb9)
 
 * 4.6 XOR3
 
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/29f5508e-0501-4d62-b50e-7ceb2362aa0d)
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/29f5508e-0501-4d62-b50e-7ceb2362aa0d)
 
 * 4.7 XOR4
 
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/3c04883e-3f90-4e0c-8ffe-238894cfc668)
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/3c04883e-3f90-4e0c-8ffe-238894cfc668)
 
 * 4.8 SR Latch
   
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/956109e1-ac9f-46d7-9c17-239b680c89ad)
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/956109e1-ac9f-46d7-9c17-239b680c89ad)
 
 * 4.9 Master-Slave JK Flip Flop
 
@@ -89,31 +89,90 @@ For an example of the error-correcting properties of the encoder and decoder, th
   ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/4d870bc5-3a89-47c2-9923-98661774391b)
 
 * 4.11 Parity Bit Generator
+  
   This stage generates the parity bits P5, P6, P7 from data bits D1, D2, D3, D4
 
   ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/b9ede75e-44c5-41eb-8cfb-7388abf5a624)
 
 * 4.12 Error Bit Check
+  
   This stage detects errors from the 7-bit word
   
   ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/da7824fe-1c2a-4328-834c-d61f37014bf0)
 
 * 4.13 Error Correction Stage
+  
   This stage corrects errors based on the data and errors computed by the error bit check
 
   ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/f489f2c0-61c9-4195-bc2b-e2a9c13428fe)
 
 * 4.14 Encoder
-The encoder performs the full encoding process
-Inputs: Data, CLK
-Outputs: D1-D4, P5-P7
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/98a8c6b2-2e58-447d-ad7e-f167586888a2)
+  
+  The encoder performs the full encoding process
+  Inputs: Data, CLK
+  Outputs: D1-D4, P5-P7
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/98a8c6b2-2e58-447d-ad7e-f167586888a2)
 
 * 4.15 Decoder
-The decoder performs the full decoding process
-Inputs: D1-D4, P5-P7
-Outputs: O1-O4 (The error corrected data)
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/0c5a2c09-8a7f-47dc-ac77-acc74666b3b7)
+  
+  The decoder performs the full decoding process
+  Inputs: D1-D4, P5-P7
+  Outputs: O1-O4 (The error corrected data)
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/0c5a2c09-8a7f-47dc-ac77-acc74666b3b7)
+
+# Cell Level Layout
+
+* 6.1 Inverter
+  
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/40c652ec-2dbe-41d2-94eb-9032848a85e9)
+
+* 6.2 NAND2
+  
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/5a4eba90-314f-4ccf-a6b6-09e9a3e1e245)
+
+* 6.3 NAND3
+  
+   ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/cf6e2830-4757-48a6-871c-0070dd60f51f)
+
+* 6.4 AND3
+
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/74b42736-640f-4bc8-b1c0-0f71d1a77a93)
+
+* 6.5 XOR2
+  
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/854e0bf6-47ae-439c-a37e-a281aef03b4a)
+
+* 6.6 XOR3
+  
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/5cde2be0-3d64-4788-a7c5-397e21f618f2)
+
+* 6.7 XOR4
+
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/5b96dfbd-ecae-46b0-b4c1-503b7369a45f)
+
+* 6.8 SR Latch
+  
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/e101b596-1a21-424e-a14d-84970ed9aa7a)
+
+* 6.9 Master-Slave JK Flip Flop
+
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/be06358f-09e2-4dee-a9da-e071406033a4)
+
+* 6.10 4x1 Serial-in-Parallel-Out Shift Register
+
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/3531a92b-344d-4e4b-ba7b-7f19e89b8444)
+
+* 6.11 Parity Bit Generator
+
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/051088d7-8c06-4370-a372-7192294c730b)
+
+* 6.12 Error Bit Check
+
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/1f669219-1512-4b48-a536-f58b4540f754)
+
+* 6.13 Error Correction Stage
+
+  ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/b136f5d9-b069-4ee5-902b-e30b2ffbfe8b)
 
 # Full Encoder Layout
 
