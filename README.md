@@ -41,11 +41,14 @@ After decoding, any single-bit error can be corrected based on the intersection 
 # Full Logic Level Simulation 
 
 For an example of the error-correcting properties of the encoder and decoder, the encoder is wired directly to the decoder and data bit 2 was chosen to be inverted. The output bit O2 takes some time to toggle to the correct state as the inputs change due to the delay of the input-shift register and the parity bits being recalculated, but the bit is corrected from the incorrect flip. 
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/9f608004-42a8-4d0f-9cb6-7eb1d8f6a821)
+<p align="center"> 
+  <img src="https://github.com/bradleeharr/LEditHammingCode/assets/56418392/9f608004-42a8-4d0f-9cb6-7eb1d8f6a821">
+</p>
 
 ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/f88052c2-cc99-4823-bc54-9a53acb0ae52)
 
 # Cell Level Descriptions
+Following are the logic cells at the tranistor level for each component used in the design. This starts with the basic Inverter up to the full circuit.
 * 4.1 Inverter
 
   ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/e0753227-900f-4219-85fe-20d3631d9c51)
@@ -119,7 +122,7 @@ For an example of the error-correcting properties of the encoder and decoder, th
   ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/0c5a2c09-8a7f-47dc-ac77-acc74666b3b7)
 
 # Cell Level Layout
-
+This consists of the cells layout in L-Edit, starting from the Inverter up to the full design.
 * 6.1 Inverter
   
   ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/40c652ec-2dbe-41d2-94eb-9032848a85e9)
