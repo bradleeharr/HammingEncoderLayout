@@ -30,12 +30,10 @@ When decoding, an error can be detected if the number of bits in any of the 'cir
 * E3 = XOR(D1, D3, D4, P7)
 
 After decoding, any single-bit error can be corrected based on the intersection of the erroneous 'circles', E1, E2, E3, corresponding to p5, p6, and p7 in Figure 2. This can be expressed as:
-* D1 = E1~~E2~~E3 XOR D1
-* D2 = E1E2~~E3~~ XOR D2
-* D3 = ~~E1~~E2E3 XOR D3
+* D1 = E1 NOT(E2)E3 XOR D1
+* D2 = E1E2NOT(E3) XOR D2
+* D3 = NOT(E1)E2E3 XOR D3
 * D4 = E1E2E3 XOR D4
-
-where ~~E1~~, ~~E2~~, and ~~E3~~ are the complements of E1, E2, and E3, respectively.
 
 # Full Logic Level Block Diagram
 ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/be246517-1567-4a00-bdb2-5975e1269e1d)
