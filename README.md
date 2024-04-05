@@ -3,21 +3,21 @@
 
 # Project Description 
 
-This project details the VLSI implementation of a Hamming (7,4), error-correcting code encoder and decoder. Within digital systems, error correcting codes are used to reduce the probability of errors in data in order to create reliable transmission within noisy mediums. There are two types of error correcting codes, Block Codes and Convolutional Codes. The Hamming (7,4) code is a simple block code that adds 3 bits of redundancy to 4-bit blocks to create 7-bit blocks.  
+This project details the VLSI implementation of a Hamming (7,4), error-correcting code encoder and decoder. Within digital systems, error-correcting codes are used to reduce the probability of errors in data to create reliable transmission within noisy mediums. There are two types of error-correcting codes: Block Codes and Convolutional Codes. The Hamming (7,4) code is a simple block code that adds 3 bits of redundancy to 4-bit blocks to create 7-bit blocks.  
 
-Error correction is essential in many digital systems to ensure the integrity of data. Take, for instance, the case of transmitting a character. If the character is encoded as an ASCII value, 'A' corresponds to 0x41, and in binary 01000010. If a single bit error occurs during the transmission, and the received character is now 01010010, the receiver would interpret this character now as an ‘R.’ This becomes a significant problem when applied at large scale and in noisy systems, where a valid string of characters could become entirely indecipherable. The importance of each bit is even more significant when dealing with compressed files or data, where even a single bit can be important enough to render the information invalid.
+Error correction is essential in many digital systems to ensure data integrity. Take, for instance, the case of transmitting a character. If the character is encoded as an ASCII value, 'A' corresponds to 0x41, and in binary 01000010. If a single bit error occurs during the transmission, and the received character is now 01010010, the receiver would interpret this character now as an ‘R.’ This becomes a significant problem when applied at large scales and in noisy systems, where a valid string of characters could become entirely indecipherable. The importance of each bit is even more significant when dealing with compressed files or data, where even a single bit can be important enough to render the information invalid.
 
 <h3> Figure 1: Transmit of Character ‘A’ and Receive of Character ‘R’ Due to Error </h3>
 
 ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/f5dbd8e2-9df6-42ba-9c55-bb683ce6154c)
 
 
-In a Hamming (7,4) code, three parity bits are mapped and added to the block of data. The configuration can be seen below, where each circle has a parity bit chosen so that the number of bits in each circle is odd. 
+In a Hamming (7,4) code, three parity bits are mapped and added to the data block. The configuration can be seen below, where each circle has a parity bit chosen so that the number of bits in each circle is odd. 
 
 <h3> Figure 2: Hamming (7,4) Encoding Map </h3>
-
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/3d65246c-1c81-4cf7-bb9c-55fc5970a39f)
-
+<p align="center">
+<img src="https://github.com/bradleeharr/LEditHammingCode/assets/56418392/3d65246c-1c81-4cf7-bb9c-55fc5970a39f">
+</p>
 
 The parity choice can be expressed in logic equations
 * P5 = XOR(D1, D2, D4)
@@ -44,9 +44,9 @@ For an example of the error-correcting properties of the encoder and decoder, th
 <p align="center"> 
   <img src="https://github.com/bradleeharr/LEditHammingCode/assets/56418392/9f608004-42a8-4d0f-9cb6-7eb1d8f6a821">
 </p>
-
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/f88052c2-cc99-4823-bc54-9a53acb0ae52)
-
+<P align="center">
+<img src="https://github.com/bradleeharr/LEditHammingCode/assets/56418392/f88052c2-cc99-4823-bc54-9a53acb0ae52">
+</p>
 # Cell Level Descriptions
 Following are the logic cells at the tranistor level for each component used in the design. This starts with the basic Inverter up to the full circuit.
 * 4.1 Inverter
