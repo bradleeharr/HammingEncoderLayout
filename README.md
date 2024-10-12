@@ -182,5 +182,3 @@ This consists of the cells layout in L-Edit, starting from the Inverter up to th
 # Full Decoder Layout
 ![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/b4691635-a70a-4ec5-a24c-6b09d0c59124)
 
-# Simulation
-![image](https://github.com/bradleeharr/LEditHammingCode/assets/56418392/99f3055e-02aa-4a24-b471-fe4a77a0dc9b)
